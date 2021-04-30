@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../utils/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Montserrat Alternates';
+
+	--main-txt-color: rgba(0, 0, 0, 0.65);
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth {
+	width: 400px;
+	height: 440px;
+
+	box-sizing: border-box;
+	padding: 10px;
+
+	height: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	background-color: #fafafa;
+}
+
+.auth__title {
+	text-align: center;
+
+	font-size: 2.25rem;
+	color: var(--main-txt-color);
+
+	padding: 23px 0px;
+}
+
+.input-container {
+	width: 100%;
+	min-height: 210px;
+	height: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	/* margin: 30px 0px; */
+}
+
+.input-field {
+	width: 320px;
+	height: 50px;
+
+	margin-bottom: 30px;
+
+	outline: none;
+	border: none;
+	text-align: center;
+
+	box-sizing: border-box;
+	border: 1px solid #fafafa;
+
+	font-size: 1.2rem;
+	color: rgba(50, 50, 50, 0.8);
+
+	background-color: #eaeaea;
+
+	transition: 150ms;
+}
+
+.input-field:focus {
+	border: 1px solid #a3e2cd;
+	transform: scale(1.02);
+}
+
+.input-field::placeholder {
+	color: rgba(50, 50, 50, 0.4);
+}
+
+.input-field_error {
+	border: 1px solid #e2a3a3 !important;
+}
+
+.btn-container {
+	width: 320px;
+	height: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: auto;
+}
+
+.btn {
+	width: 140px;
+	height: 54px;
+
+	border-radius: 30px;
+
+	outline: none;
+
+	font-size: 1.2rem;
+	color: #fff;
+
+	transition: 150ms;
+}
+.btn:active {
+	transform: scale(1.05);
+}
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn_green {
+	background-color: #85d0b5;
+	border: 2px solid #85d0b5;
+}
+.btn_green:hover {
+	background-color: #fafafa;
+	color: #85d0b5;
+}
+
+.btn_red {
+	background-color: #d08585;
+	border: 2px solid #d08585;
+}
+.btn_red:hover {
+	background-color: #fafafa;
+	color: #d08585;
+}
+
+.outlog {
+	width: 320px;
+	height: auto;
+
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	overflow: hidden;
+}
+
+.outlog__text {
+	font-size: 0.75rem;
+	color: #ce6464;
+	text-align: center;
+}
+
+.mode-switch {
+	width: 100%;
+
+	color: #649df2;
+	font-size: 0.75rem;
+	text-align: center;
+	text-decoration: underline;
+}
+.mode-switch:hover {
+	cursor: pointer;
+}
+
+#email {
+	display: none;
+}

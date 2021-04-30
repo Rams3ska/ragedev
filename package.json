@@ -9,7 +9,13 @@
   "author": "Rams3ska",
   "license": "ISC",
   "devDependencies": {
+    "@types/jquery": "^3.5.5",
     "@types/ragemp-c": "github:CocaColaBear/types-ragemp-c#v1.0",
-    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#v1.0"
+    "@types/ragemp-s": "github:CocaColaBear/types-ragemp-s#v1.0",
+    "@types/sequelize": "^4.28.9"
+  },
+  "dependencies": {
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
   }
 }

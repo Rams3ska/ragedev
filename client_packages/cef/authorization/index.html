@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="../utils/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div id="root">
+			<div class="auth">
+				<h1 class="auth__title">Авторизация</h1>
+				<div class="input-container" id="auth-form">
+					<input type="text" name="login" id="login" class="input-field" placeholder="Login" />
+					<input type="password" name="password" id="password" class="input-field" placeholder="Password" />
+					<input type="email" name="email" id="email" class="input-field" placeholder="Email" />
+				</div>
+				<div class="btn-container">
+					<button class="btn btn_green" id="btn-submit">ВОЙТИ</button>
+					<button class="btn btn_red" id="btn-cancel">ОТМЕНА</button>
+				</div>
+				<div class="outlog">
+					<span class="outlog__text"></span>
+				</div>
+				<p class="mode-switch">Регистрация</p>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
