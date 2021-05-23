@@ -1,0 +1,181 @@
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../utils/fonts/MontserratAlternates/MontserratAlternates-Regular.ttf');
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+
+	color: rgba(0, 0, 0, 0.7);
+
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cars-container {
+	width: 837px;
+	height: 700px;
+
+	border-radius: 3px;
+
+	box-sizing: border-box;
+
+	overflow: hidden;
+
+	background-color: whitesmoke;
+}
+
+.cars-container__title {
+	margin: 10px 0px;
+
+	text-align: center;
+}
+
+.cars-groups {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+
+	overflow-y: scroll;
+}
+
+.group {
+	margin-bottom: 20px;
+
+	box-shadow: 0px 0px 4px 0px rgb(90 90 90 / 40%);
+}
+
+.group__title {
+	font-size: 1.2rem;
+}
+
+.group-expand__btn {
+	width: 100%;
+	min-height: 50px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	text-align: start;
+
+	box-sizing: border-box;
+	padding: 10px 20px;
+
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgb(170 170 170 / 40%);
+
+	outline: none;
+
+	background-color: rgb(220, 220, 220);
+
+	transition: 100ms;
+}
+.group-expand__btn:hover {
+	cursor: pointer;
+
+	background-color: rgb(210, 210, 210);
+}
+.group-expand__btn:active {
+	background-color: rgb(180, 230, 180);
+}
+.group-expand__btn > span {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+.group__name {
+	margin-right: 10px;
+}
+.group-content {
+	height: 0px;
+	padding: 0px 20px;
+
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+
+	box-sizing: border-box;
+
+	background-color: rgb(235, 235, 235);
+
+	transition: 150ms;
+}
+.group-content .car-item {
+	display: none;
+}
+
+.group-content_active {
+	height: auto;
+
+	padding: 20px 20px 0px 20px;
+}
+.group-content_active .car-item {
+	display: flex;
+}
+
+.car-item {
+	width: 175px;
+	height: 200px;
+
+	box-sizing: border-box;
+	padding: 10px;
+
+	margin-right: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	background-color: whitesmoke;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	align-content: center;
+
+	box-shadow: 0px 0px 2px 0px rgb(128 128 128 / 20%);
+
+	transition: 100ms;
+}
+
+.car-item:hover {
+	cursor: pointer;
+	background-color: rgb(255, 255, 255);
+}
+
+.car-item__image {
+	width: -webkit-fill-available;
+
+	margin-bottom: 20px;
+
+	border-radius: 3px;
+
+	box-shadow: 0px 0px 2px 0px #e91e6361;
+}
+
+.car-item__description {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	font-size: 0.9rem;
+}

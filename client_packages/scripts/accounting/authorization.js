@@ -73,5 +73,5 @@ mp.events.addProc('clientProc:accounting.registration', async (login, password, 
 // процедура отмены авторизации, если игрок нажмет на кнопку "отмена"
 mp.events.addProc('clientProc:accounting.cancelAuthorization', () => {
 	// вызываем серверную процедуру, которая кикнет игрока
-	mp.events.callRemoteProc();
+	mp.events.callRemoteProc('serverProc:accounting.cancelAuthorization');
 });

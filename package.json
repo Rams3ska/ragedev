@@ -15,6 +15,8 @@
     "@types/sequelize": "^4.28.9"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.9",
+    "got": "^11.8.2",
     "mysql2": "^2.2.5",
     "sequelize": "^6.6.2"
   }

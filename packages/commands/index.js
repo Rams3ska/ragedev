@@ -34,3 +34,7 @@ mp.events.addCommand('mydata', (player) => {
 
 	console.log(data);
 });
+
+mp.events.addCommand('vsp', (player) => {
+	player.call('clientEvent:vehicleSpawner.init');
+});
